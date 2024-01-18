@@ -1,5 +1,6 @@
 const { Telegraf } = require('telegraf');
 const { Client } = require('@notionhq/client');
+const { getDataBasesController } = require('./controllers/getDataBasesController.js')
 require('dotenv').config();
 
 const token = process.env.BOT_TOKEN;
@@ -11,16 +12,16 @@ console.log(process.env.NOTION_TOKEN);
 
 const bot = new Telegraf(token);
 
-async function getDataBases() {
-    try {
-        const response = await notion.databases.query({
-            database_id: 'be6b6e525aac4244891369f9cf891672'
-        });
-        console.log('Список баз данных: ', response.results);
-    } catch(err) {
-        console.log(err);
-    }
-}
+// async function getDataBases() {
+//     try {
+//         const response = await notion.databases.query({
+//             database_id: 'be6b6e525aac4244891369f9cf891672'
+//         });
+//         console.log('Список баз данных: ', response.results);
+//     } catch(err) {
+//         console.log(err);
+//     }
+// }
 
 bot.start((ctx) => {
     ctx.reply('Ответ бота');
@@ -34,5 +35,5 @@ bot.launch().then(() => {
     console.log('Бот запущен');
 });
 
-getDataBases();
+getDataBasesController();
 
