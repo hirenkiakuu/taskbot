@@ -1,0 +1,27 @@
+{
+  "name": "taskbot",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirenkiakuu/taskbot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "hirenkiakuu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hirenkiakuu/taskbot/issues"
+  },
+  "homepage": "https://github.com/hirenkiakuu/taskbot#readme",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "dotenv": "^16.3.1",
+    "telegraf": "^4.15.3"
+  }
+}
