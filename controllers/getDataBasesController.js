@@ -10,5 +10,5 @@ async function getDataBases() {
     }
 }
 
-export default getDataBases
+export { getDataBases };
 

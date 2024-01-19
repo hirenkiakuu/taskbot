@@ -1,10 +1,11 @@
 {
   "name": "taskbot",
   "version": "1.0.0",
+  "type": "module",
   "description": "no description",
   "main": "bot.js",
   "scripts": {
-    "dev": "dev"
+    "dev": "node bot.js"
   },
   "repository": {
     "type": "git",
